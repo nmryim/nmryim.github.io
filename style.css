@@ -1,0 +1,118 @@
+.title {
+  position: relative;
+}
+
+.site-title {
+  position: absolute;
+  color: white;
+  font-size: 80px;
+  top: 25%;
+  left: 25%;
+}
+
+.buttons {
+  position: absolute;
+  font-size: 30px;
+  top: 60%;
+  left:10%;
+}
+
+.button {
+  display: :inline-block;
+  padding:10px;
+  background-color:transparent;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing:1px;
+}
+
+.button:hover {
+  background-color:rgba(255,255,255,.2);
+}
+
+.buttons .button {
+  margin:100px;
+}
+
+body {
+  background-size: cover;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.profile {
+  padding:90px 30px;
+  background-color:#fff;
+}
+
+.heading {
+  margin: :30px 0 15px;
+  font-size: 50px;
+  letter-spacing:1px;
+  color:#333;
+}
+
+.heading-contact{
+  margin: :30px 0 15px;
+  font-size: 50px;
+  letter-spacing:1px;
+  color:#fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.profile-text {
+  margin: 30px 0 30px;
+  color: #333;
+}
+
+.svg {
+  margin-top: 20px;
+  text-align:center;
+}
+
+.works {
+  padding:80px 30px;
+}
+
+.works-wrapper {
+  display:table;
+  width:100%;
+  margin-top: 60px;
+  table-layout:fixed;
+}
+
+.work-box {
+  display:table-cell;
+}
+
+.work-image {
+  display: block;
+  width:100%;
+}
+
+.contact {
+  padding:80px 40px;
+  background-color:#333;
+}
+
+.mailaddress {
+  display: inline-block;
+  background-color:rgba(255,255,255,.2);
+  padding:20px;
+  margin-top: 30px;
+  font-size: 40px;
+  color:#fff;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 25px;
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
