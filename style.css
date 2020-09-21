@@ -91,6 +91,10 @@ body {
   width:100%;
 }
 
+.work-text {
+  margin: 60px 0 40px;
+}
+
 .contact {
   padding:80px 40px;
   background-color:#333;
