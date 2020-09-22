@@ -80,6 +80,7 @@ body {
 .works {
   padding:80px 30px;
 }
+
 .works-wrapper,
 .work-box {
   display:block;
@@ -105,7 +106,7 @@ body {
 }
 
 .work-image {
-  display: block;
+  display: none;
   width:100%;
 }
 
