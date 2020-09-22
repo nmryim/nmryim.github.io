@@ -2,6 +2,30 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-size: cover;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*heading*/
+.heading {
+  margin: :30px 0 15px;
+  font-size: 4rem;
+  letter-spacing:1px;
+  color:#333;
+}
+
+.heading-contact{
+  margin: :30px 0 15px;
+  font-size: 4rem;
+  letter-spacing:1px;
+  color:#fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*title*/
 .title {
   position: relative;
 }
@@ -39,31 +63,10 @@ html {
   margin:40px;
 }
 
-body {
-  background-size: cover;
-  background-color: #fff;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-}
-
+/*profile*/
 .profile {
   padding:90px 30px;
   background-color:#fff;
-}
-
-.heading {
-  margin: :30px 0 15px;
-  font-size: 4rem;
-  letter-spacing:1px;
-  color:#333;
-}
-
-.heading-contact{
-  margin: :30px 0 15px;
-  font-size: 4rem;
-  letter-spacing:1px;
-  color:#fff;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .profile-text {
@@ -77,6 +80,7 @@ body {
   text-align:center;
 }
 
+/*work*/
 .works {
   padding:80px 30px;
 }
@@ -102,6 +106,7 @@ body {
   font-size:2rem;
 }
 
+/*contact*/
 .contact {
   padding:80px 40px;
   background-color:#333;
@@ -116,6 +121,7 @@ body {
   color:#fff;
 }
 
+/*footer*/
 .footer {
   background-color: #333;
   color:#fff;
@@ -128,8 +134,14 @@ li {
   margin: 25px;
 }
 
-
 * {
   margin: 0px;
   padding: 0px;
+}
+
+/*smart phone*/
+@media (max-width: 768px) {
+  title-img {
+    width:100vw;
+  }
 }
