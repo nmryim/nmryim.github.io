@@ -1,34 +1,20 @@
-html {
-  width:100%;
-  font-size: 62.5%;
-}
-
-body {
-  background-size: cover;
-  background-color: #fff;
-  text-align: center;
-  font-size:1.4rem;
-  font-family:Ralewey,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
-}
 .title {
-  position:relative;
-}
-
-.title-img {
-  width:100vw;
+  position: relative;
 }
 
 .site-title {
   position: absolute;
+  white-space: nowrap;
   color: white;
-  font-size: 8rem;
-  left:25%;
+  font-size: 80px;
+  top: 25%;
+  left: 25%;
 }
 
 .buttons {
   position: absolute;
-  font-size: 3rem;
-  font-align:center;
+  white-space: nowrap;
+  font-size: 30px;
   top: 60%;
   left:10%;
 }
@@ -50,6 +36,13 @@ body {
   margin:100px;
 }
 
+body {
+  background-size: cover;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
 .profile {
   padding:90px 30px;
   background-color:#fff;
@@ -57,16 +50,17 @@ body {
 
 .heading {
   margin: :30px 0 15px;
-  font-size: 4rem;
+  font-size: 50px;
   letter-spacing:1px;
   color:#333;
 }
 
 .heading-contact{
   margin: :30px 0 15px;
-  font-size: 4rem;
+  font-size: 50px;
   letter-spacing:1px;
   color:#fff;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .profile-text {
@@ -83,21 +77,15 @@ body {
   padding:80px 30px;
 }
 
-.works-wrapper,
-.work-box {
-  display:block;
-}
-
-.work-box {
-  position:relative;
-  display:table-cell;
-}
-
 .works-wrapper {
   display:table;
   width:100%;
   margin-top: 60px;
   table-layout:fixed;
+}
+
+.work-box {
+  display:table-cell;
 }
 
 .work-image {
@@ -119,13 +107,13 @@ body {
   background-color:rgba(255,255,255,.2);
   padding:20px;
   margin-top: 30px;
-  font-size: 3.5rem;
+  font-size: 40px;
   color:#fff;
 }
 
 .footer {
-  padding:12px 0;
-  font-size:1.3rem;
+  background-color: #333;
+  color:#fff;
 }
 
 li {
@@ -134,10 +122,8 @@ li {
   margin: 25px;
 }
 
+
 * {
   margin: 0px;
   padding: 0px;
-}
-
-@media(max-width:768px) {
 }
