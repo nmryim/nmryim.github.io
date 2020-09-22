@@ -91,12 +91,10 @@ body {
 }
 
 .work-box::after {
-  content'';
-  position:absolute;
-  top:50%;
-  left:0;
-  width:100%;
-  height:50%;
+  top:0;
+  height:100%;
+  background-seze:cover;
+  transform:none;
 }
 
 .works-wrapper {
