@@ -58,7 +58,6 @@ body {
   font-size: 50px;
   letter-spacing:1px;
   color:#fff;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .profile-text {
@@ -113,6 +112,7 @@ body {
   padding:12px 0;
   font-size:1.3rem;
   color:#fff;
+  
 }
 
 li {
