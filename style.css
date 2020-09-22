@@ -74,6 +74,10 @@ body {
 .works {
   padding:80px 30px;
 }
+.works-wrapper,
+.work-box {
+  display:block;
+}
 
 .works-wrapper {
   display:table;
