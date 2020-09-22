@@ -34,16 +34,22 @@ body {
   position: absolute;
   color: white;
   font-size: 7.6rem;
-  top: 25%;
-  left: 25%;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .buttons {
   position: absolute;
   white-space: nowrap;
   font-size: 3rem;
-  top: 60%;
-  left:25%;
+  top: 65%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .button {
@@ -141,7 +147,21 @@ li {
 
 /*smart phone*/
 @media (max-width: 768px) {
-  title-img {
-    width:100vw;
+  .site-title {
+    white-space: nowrap;
+    font-size:5vw;
+  }
+
+  .buttons {
+    font-size:3vw;
+  }
+
+  .buttons .button {
+    margin:10px;
+  }
+
+  .title-img {
+    max-width:100%;
+    height:auto;
   }
 }
