@@ -142,6 +142,6 @@ li {
 /*smart phone*/
 @media (max-width: 768px) {
   title-img {
-    width:100vw;
+    width:;
   }
 }
