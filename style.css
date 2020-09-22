@@ -17,6 +17,8 @@ body {
 }
 
 .site-title {
+  position:absolute;
+  white-space:nowrap;
   color: white;
   font-size: 8vw;
   top: 25%;
