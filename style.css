@@ -10,6 +10,9 @@ body {
   font-size:1.4rem;
   font-family:Ralewey,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
 }
+.title {
+  position:relative;
+}
 
 .title-img {
   position: relative;
