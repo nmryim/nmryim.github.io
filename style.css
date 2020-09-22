@@ -109,12 +109,17 @@ body {
   color:#fff;
 }
 
+.footer {
+  padding:12px 0;
+  font-size:1.3rem;
+  color:#fff;
+}
+
 li {
   list-style: none;
   display: inline-block;
   margin: 25px;
 }
-
 
 * {
   margin: 0px;
