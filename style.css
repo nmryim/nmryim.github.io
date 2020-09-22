@@ -13,6 +13,7 @@
 .buttons {
   position: absolute;
   font-size: 30px;
+  font-align:center;
   top: 60%;
   left:10%;
 }
