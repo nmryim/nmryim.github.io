@@ -12,7 +12,6 @@ body {
 }
 .title {
   position:relative;
-  display:inline-block;
 }
 
 .title-img {
@@ -21,10 +20,8 @@ body {
 
 .site-title {
   position:absolute;
-  display:block;
   color: white;
   font-size: 8rem;
-  top: 25%;
   left: 25%;
 }
 
