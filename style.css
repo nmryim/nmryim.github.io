@@ -91,13 +91,6 @@ body {
   display:table-cell;
 }
 
-.work-box::after {
-  top:0;
-  height:100%;
-  background-seze:cover;
-  transform:none;
-}
-
 .works-wrapper {
   display:table;
   width:100%;
