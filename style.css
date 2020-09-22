@@ -18,6 +18,12 @@ body {
   width:100vw;
 }
 
+.site-title {
+  position: absolute;
+  color: white;
+  font-size: 8rem;
+}
+
 .buttons {
   position: absolute;
   font-size: 3rem;
