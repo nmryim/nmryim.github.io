@@ -10,6 +10,10 @@ body {
   position: relative;
 }
 
+.title-img {
+  width:100%;
+}
+
 .site-title {
   position: absolute;
   color: white;
