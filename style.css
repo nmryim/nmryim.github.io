@@ -88,6 +88,7 @@ body {
 
 .work-box {
   position:relative;
+  display:table-cell;
 }
 
 .work-box::after {
@@ -98,6 +99,7 @@ body {
 }
 
 .works-wrapper {
+  display:table;
   width:100%;
   margin-top: 60px;
   table-layout:fixed;
