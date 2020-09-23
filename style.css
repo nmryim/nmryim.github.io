@@ -30,6 +30,12 @@ body {
   position:relative;
 }
 
+.title-img {
+  width:100vw;
+  height:810px;
+  object-fit:cover;
+}
+
 .site-title {
   position:absolute;
   color:white;
@@ -71,14 +77,19 @@ body {
 
 /*profile*/
 .profile {
-  padding:90px 30px;
+  padding:80px 30px;
   background-color:#fff;
 }
 
 .profile-text {
-  margin:30px 0 30px;
+  margin-top:30px;
   color:#333;
   font-size:2rem;
+}
+
+/*skills*/
+.skills {
+  padding:80px 30px;
 }
 
 .svg {
@@ -119,7 +130,7 @@ body {
 
 /*contact*/
 .contact {
-  padding:80px 40px;
+  padding:80px 30px;
   background-color:#333;
 }
 
@@ -172,6 +183,10 @@ li {
 
   .heading-contact,.heading{
     font-size:2.5rem;
+  }
+
+  .profile,.skills,.works,.contact {
+    padding:20px 30px;
   }
 
   .profile-text {
