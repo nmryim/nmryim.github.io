@@ -1,63 +1,63 @@
 html {
-  font-size: 62.5%;
+  font-size:62.5%;
 }
 
 body {
-  background-size: cover;
-  background-color: #fff;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
+  background-size:cover;
+  background-color:#fff;
+  text-align:center;
+  font-family:'Quicksand', sans-serif;
 }
 
 /*heading*/
 .heading {
-  margin: :30px 0 15px;
-  font-size: 4rem;
+  margin:30px 0 15px;
+  font-size:4rem;
   letter-spacing:1px;
   color:#333;
 }
 
 .heading-contact{
-  margin: :30px 0 15px;
-  font-size: 4rem;
+  margin:30px 0 15px;
+  font-size:4rem;
   letter-spacing:1px;
   color:#fff;
-  font-family: 'Quicksand', sans-serif;
+  font-family:'Quicksand', sans-serif;
 }
 
 /*title*/
 .title {
-  position: relative;
+  position:relative;
 }
 
 .site-title {
-  position: absolute;
-  color: white;
-  font-size: 7.6rem;
-  top: 35%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  position:absolute;
+  color:white;
+  font-size:7.6rem;
+  top:35%;
+  left:50%;
+  -ms-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
 }
 
 .buttons {
-  position: absolute;
-  white-space: nowrap;
-  font-size: 3rem;
-  top: 65%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  position:absolute;
+  white-space:nowrap;
+  font-size:3rem;
+  top:65%;
+  left:50%;
+  -ms-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
 }
 
 .button {
-  display: :inline-block;
+  display:inline-block;
   padding:10px;
   background-color:transparent;
-  color: #fff;
-  text-decoration: none;
+  color:#fff;
+  text-decoration:none;
   letter-spacing:1px;
 }
 
@@ -76,13 +76,13 @@ body {
 }
 
 .profile-text {
-  margin: 30px 0 30px;
-  color: #333;
-  font-size: 2rem;
+  margin:30px 0 30px;
+  color:#333;
+  font-size:2rem;
 }
 
 .svg {
-  margin-top: 20px;
+  margin-top:20px;
   text-align:center;
 }
 
@@ -94,7 +94,7 @@ body {
 .works-wrapper {
   display:table;
   width:100%;
-  margin-top: 60px;
+  margin-top:60px;
   table-layout:fixed;
 }
 
@@ -103,13 +103,18 @@ body {
 }
 
 .work-image {
-  display: block;
+  display:block;
   width:100%;
 }
 
 .work-text {
-  margin: 60px 0 40px;
+  margin:60px 20px 40px;
   font-size:2rem;
+  word-break:break-all;
+}
+
+.url {
+  word-break:break-all;
 }
 
 /*contact*/
@@ -119,37 +124,37 @@ body {
 }
 
 .mailaddress {
-  display: inline-block;
+  display:inline-block;
   background-color:rgba(255,255,255,.2);
   padding:20px;
-  margin-top: 30px;
-  font-size: 3rem;
+  margin-top:30px;
+  font-size:3rem;
   color:#fff;
 }
 
 /*footer*/
 .footer {
-  background-color: #333;
+  background-color:#333;
   color:#fff;
-  font-size: 1.2rem;
+  font-size:1.2rem;
 }
 
 li {
-  list-style: none;
-  display: inline-block;
-  margin: 25px;
+  list-style:none;
+  display:inline-block;
+  margin:25px;
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin:0px;
+  padding:0px;
 }
 
 /*smart phone*/
 @media (max-width: 768px) {
   .site-title {
-    white-space: nowrap;
-    font-size:5vw;
+    white-space:nowrap;
+    font-size:6vw;
   }
 
   .buttons {
@@ -166,14 +171,23 @@ li {
   }
 
   .heading-contact,.heading{
-    font-size: 2.5rem;
+    font-size:2.5rem;
   }
 
   .profile-text {
-    font-size: 1.3rem;
+    font-size:1.3rem;
+  }
+
+  .work-text {
+    font-size:1.3rem;
+  }
+
+  .works-wrapper,
+  .work-box {
+    display:block;
   }
 
   .mailaddress {
-    font-size: 2rem;
+    font-size:2rem;
   }
 }
