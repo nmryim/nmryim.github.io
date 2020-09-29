@@ -75,16 +75,97 @@ body {
   margin:40px;
 }
 
+/*menu*/
+.drawer-hidden {
+    display: none;
+}
+
+.drawer-open {
+    display: flex;
+    left:95%;
+    bottom:90%;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position:fixed;
+    z-index: 100; /* 重なり順を一番上に */
+    cursor: pointer;
+}
+
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #fff;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.drawer-open span:before {
+    bottom: 8px;
+}
+
+.drawer-open span:after {
+    top: 8px;
+}
+
+#drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+}
+
+#drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#drawer-check:checked ~ .drawer-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.drawer-content {
+    padding-top:5%;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background:#333;
+    transition: .5s;
+}
+
+#drawer-check:checked ~ .drawer-content {
+    left: 70%; /* メニューを画面に入れる */
+}
+
+.drawer-item {
+    font-size: 3rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    line-height: 2;
+}
+
 /*profile*/
 .profile {
-  padding:80px 30px;
-  background-color:#fff;
+    padding: 80px 30px;
+    background-color: #fff;
 }
 
 .profile-text {
-  margin-top:30px;
-  color:#333;
-  font-size:2rem;
+    margin-top: 30px;
+    color: #333;
+    font-size: 2rem;
+    list-style: none;
 }
 
 /*skills*/
@@ -95,6 +176,11 @@ body {
 .svg {
   margin-top:20px;
   text-align:center;
+}
+
+.list_side {
+    display: inline-block;
+    margin: 25px;
 }
 
 /*work*/
@@ -151,9 +237,7 @@ body {
 }
 
 li {
-  list-style:none;
-  display:inline-block;
-  margin:25px;
+    list-style: none;
 }
 
 * {
@@ -162,47 +246,47 @@ li {
 }
 
 /*smart phone*/
-@media (max-width: 768px) {
-  .site-title {
-    white-space:nowrap;
-    font-size:6vw;
-  }
+@media screen and (max-width: 768px) {
+    .site-title {
+        white-space: nowrap;
+        font-size: 6vw;
+    }
 
-  .buttons {
-    font-size:3vw;
-  }
+    .buttons {
+        font-size: 3vw;
+    }
 
-  .buttons .button {
-    margin:10px;
-  }
+        .buttons .button {
+            margin: 10px;
+        }
 
-  .title-img {
-    max-width:100%;
-    height:auto;
-  }
+    .title-img {
+        max-width: 100%;
+        height: auto;
+    }
 
-  .heading-contact,.heading{
-    font-size:2.5rem;
-  }
+    .heading-contact, .heading {
+        font-size: 2.5rem;
+    }
 
-  .profile,.skills,.works,.contact {
-    padding:20px 30px;
-  }
+    .profile, .skills, .works, .contact {
+        padding: 20px 30px;
+    }
 
-  .profile-text {
-    font-size:1.3rem;
-  }
+    .profile-text {
+        font-size: 1.3rem;
+    }
 
-  .work-text {
-    font-size:1.3rem;
-  }
+    .work-text {
+        font-size: 1.3rem;
+    }
 
-  .works-wrapper,
-  .work-box {
-    display:block;
-  }
+    .works-wrapper,
+    .work-box {
+        display: block;
+    }
 
-  .mailaddress {
-    font-size:2rem;
-  }
+    .mailaddress {
+        font-size: 2rem;
+    }
 }
