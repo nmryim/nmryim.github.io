@@ -1,81 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <title>Yuimi Nomura's portfolio</title>
-  <script src="https://kit.fontawesome.com/6f8087bb02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>Yuimi Nomura's portfolio</title>
+    <script src="https://kit.fontawesome.com/6f8087bb02.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="title">
-      <img src="img/title.png"/ class="title-img">
-      <p class="site-title">Yuimi&ensp;Nomura's&ensp;portfolio</p>
-      <div class="buttons">
-        <a class="button" href="#profile"><i class = "fas fa-user"></i>&ensp;Profile</a>
-        <a class="button" href="#skills"><i class = "fas fa-bars"></i>&ensp;Skill</a>
-        <a class="button" href="#works"><i class = "fas fa-file-code"></i>&ensp;Work</a>
-        <a class="button" href="#contact"><i class = "fas fa-envelope"></i>&ensp;Contact</a>
-      </div>
-    </div>
-  </header>
-  <section class="profile" id="profile">
-    <p class="heading"><i class = "fas fa-user"></i>&ensp;Profile</p>
-    <p class="profile-text">
-      初めまして。私は野村唯未と申します。<br>
-      専門学校に入学してからプログラミングを学びました。<br>
-      主にUnityを使用してゲームを制作しています。
-    </p>
-  </section>
-  <section class="skills" id="skills">
-    <p class="heading"><i class = "fas fa-bars"></i>&ensp;Skills</p>
-    <div class="svg">
-      <li><img src="img/c-plusplus.svg" width=100 height=100></li>
-      <li><img src="img/c-sharp.svg" width=100 height=100></li>
-      <li><img src="img/python.svg" width=100 height=100></li>
-      <li><img src="img/html-5.svg" width=100 height=100></li>
-      <li><img src="img/css-3.svg" width=100 height=100></li>
-    </div>
-  </section>
-  <section class="works" id="works">
-    <p class="heading"><i class = "fas fa-file-code"></i>&ensp;Works</p>
-    <div class="works-wrapper">
-      <div class="work-box">
-        <img class="work-image" src="img/portfolio.png" alt="制作事例1">
-        <p class="work-text">
-          このサイトです。これを制作するためにHTML/CSSを学びました。<br>
-          使用ツール：HTML/CSS<br>
-          URL:<a href="https://nmryim.github.io" class="url">https://nmryim.github.io</a><br>
-          ソースコード：<a href="https://github.com/nmryim/nmryim.github.io" class="url">https://github.com/nmryim/nmryim.github.io</a>
+    <header class="header" id="home">
+        <div class="title">
+            <img src="img/title.png" class="title-img">
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="drawer">
+
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input type="checkbox" id="drawer-check" class="drawer-hidden">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer-check" class="drawer-open"><span></span></label>
+
+                <!-- メニュー -->
+                <nav class="drawer-content">
+                    <ul class="drawer-list">
+                        <li><a href="#home" class="drawer-item">Home</a></li>
+                        <li><a href="#profile" class="drawer-item">Profile</a></li>
+                        <li><a href="#skills" class="drawer-item">Skills</a></li>
+                        <li><a href="#works" class="drawer-item">Works</a></li>
+                        <li><a href="#contact" class="drawer-item">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <p class="site-title">Yuimi&ensp;Nomura's&ensp;portfolio</p>
+            <div class="buttons">
+                <a class="button" href="#profile"><i class="fas fa-user"></i>&ensp;Profile</a>
+                <a class="button" href="#skills"><i class="fas fa-bars"></i>&ensp;Skill</a>
+                <a class="button" href="#works"><i class="fas fa-file-code"></i>&ensp;Works</a>
+                <a class="button" href="#contact"><i class="fas fa-envelope"></i>&ensp;Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="profile" id="profile">
+        <p class="heading"><i class="fas fa-user"></i>&ensp;Profile</p>
+        <p class="profile-text">
+            初めまして。私は野村唯未と申します。<br>
+            専門学校に入学してからプログラミングを学びました。<br>
+            主にUnityを使用してゲームを制作しています。
         </p>
-      </div>
-      <div class="work-box">
-        <img class="work-image" src="img/popshot.png" alt="制作事例2">
-        <p class="work-text">
-          個人で制作した全方位シューティングゲームです。<br>
-          ゲームを終了してもデータを保持するハイスコアランキングを実装することに苦労しました。<br>
-          使用ツール：Unity/Photoshop/Illustrator/After&ensp;Effects<br>
-          URL：<a href="https://drive.google.com/drive/u/1/folders/1FdoydTvZ-rqoBXBhUld38oFvREmFLebP" class="url">drive.google.com/drive/u/1/folders/1FdoydTvZ-rqoBXBhUld38oFvREmFLebP</a>
-        </p>
-      </div>
-      <div class="work-box">
-        <img class="work-image" src="img/swimspace.png" alt="制作事例3">
-        <p class="work-text">
-          チームで制作した障害物回避アクションゲームです。<br>
-          背景に使用されているイラストも担当しました。<br>
-          使用ツール：Unity/Photoshop<br>
-          URL:<a href="https://drive.google.com/drive/u/1/folders/1Z7R3nG33Leidi2xuAoEy-Yuc0gsfpgvZ" class="url">drive.google.com/drive/u/1/folders/1Z7R3nG33Leidi2xuAoEy-Yuc0gsfpgvZ</a>
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="contact" id="contact">
-    <p class="heading-contact"><i class = "fas fa-envelope"></i>&ensp;Contact</p>
-    <p class="mailaddress">18cu0122@jec.ac.jp</p>
-  </section>
-  <footer class="footer">
-    ©portfolio site
-  </footer>
+    </section>
+    <section class="skills" id="skills">
+        <p class="heading"><i class="fas fa-bars"></i>&ensp;Skills</p>
+        <div class="svg">
+            <ul>
+                <li class="list_side"><img src="img/c-plusplus.svg" width=100 height=100></li>
+                <li class="list_side"><img src="img/c-sharp.svg" width=100 height=100></li>
+                <li class="list_side"><img src="img/python.svg" width=100 height=100></li>
+                <li class="list_side"><img src="img/html-5.svg" width=100 height=100></li>
+                <li class="list_side"><img src="img/css-3.svg" width=100 height=100></li>
+            </ul>
+        </div>
+    </section>
+    <section class="works" id="works">
+        <p class="heading"><i class="fas fa-file-code"></i>&ensp;Works</p>
+        <div class="works-wrapper">
+            <div class="work-box">
+                <img class="work-image" src="img/portfolio.png" alt="制作事例1">
+                <p class="work-text">
+                    このサイトです。これを制作するためにHTML/CSSを学びました。<br>
+                    使用ツール：HTML/CSS<br>
+                    URL:<a href="https://nmryim.github.io" class="url">https://nmryim.github.io</a><br>
+                    ソースコード：<a href="https://github.com/nmryim/nmryim.github.io" class="url">https://github.com/nmryim/nmryim.github.io</a>
+                </p>
+            </div>
+            <div class="work-box">
+                <img class="work-image" src="img/popshot.png" alt="制作事例2">
+                <p class="work-text">
+                    個人で制作した全方位シューティングゲームです。<br>
+                    ゲームを終了してもデータを保持するハイスコアランキングを実装することに苦労しました。<br>
+                    使用ツール：Unity/Photoshop/Illustrator/After&ensp;Effects<br>
+                    URL：<a href="https://drive.google.com/drive/u/1/folders/1FdoydTvZ-rqoBXBhUld38oFvREmFLebP" class="url">drive.google.com/drive/u/1/folders/1FdoydTvZ-rqoBXBhUld38oFvREmFLebP</a>
+                </p>
+            </div>
+            <div class="work-box">
+                <img class="work-image" src="img/swimspace.png" alt="制作事例3">
+                <p class="work-text">
+                    チームで制作した障害物回避アクションゲームです。<br>
+                    背景に使用されているイラストも担当しました。<br>
+                    使用ツール：Unity/Photoshop<br>
+                    URL:<a href="https://drive.google.com/drive/u/1/folders/1Z7R3nG33Leidi2xuAoEy-Yuc0gsfpgvZ" class="url">drive.google.com/drive/u/1/folders/1Z7R3nG33Leidi2xuAoEy-Yuc0gsfpgvZ</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <p class="heading-contact"><i class="fas fa-envelope"></i>&ensp;Contact</p>
+        <p class="mailaddress">18cu0122@jec.ac.jp</p>
+    </section>
+    <footer class="footer">
+        ©portfolio site
+    </footer>
 </body>
 </html>
