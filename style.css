@@ -76,12 +76,12 @@ body {
 }
 
 /*menu*/
-/* ãƒã‚§ãƒƒã‚¯ãƒœãƒƒã‚¯ã‚¹ã¯éè¡¨ç¤ºã« */
+/* ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Í”ñ•\¦‚É */
 .drawer-hidden {
     display: none;
 }
 
-/* ãƒãƒ³ãƒãƒ¼ã‚¬ãƒ¼ã‚¢ã‚¤ã‚³ãƒ³ã®è¨­ç½®ã‚¹ãƒšãƒ¼ã‚¹ */
+/* ƒnƒ“ƒo[ƒK[ƒAƒCƒRƒ“‚Ìİ’uƒXƒy[ƒX */
 .drawer-open {
     display: flex;
     left:95%;
@@ -92,11 +92,11 @@ body {
     align-items: center;
     position: absolute;
     position:fixed;
-    z-index: 100; /* é‡ãªã‚Šé †ã‚’ä¸€ç•ªä¸Šã« */
+    z-index: 100; /* d‚È‚è‡‚ğˆê”Ôã‚É */
     cursor: pointer;
 }
 
-/* ãƒãƒ³ãƒãƒ¼ã‚¬ãƒ¼ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ã‚¢ã‚¤ã‚³ãƒ³ */
+/* ƒnƒ“ƒo[ƒK[ƒƒjƒ…[‚ÌƒAƒCƒRƒ“ */
 .drawer-open span,
 .drawer-open span:before,
 .drawer-open span:after {
@@ -110,22 +110,22 @@ body {
     position: absolute;
 }
 
-/* ä¸‰æœ¬ç·šã®ã†ã¡ä¸€ç•ªä¸Šã®æ£’ã®ä½ç½®èª¿æ•´ */
+/* O–{ü‚Ì‚¤‚¿ˆê”Ôã‚Ì–_‚ÌˆÊ’u’²® */
 .drawer-open span:before {
     bottom: 8px;
 }
 
-/* ä¸‰æœ¬ç·šã®ã†ã¡ä¸€ç•ªä¸‹ã®æ£’ã®ä½ç½®èª¿æ•´ */
+/* O–{ü‚Ì‚¤‚¿ˆê”Ô‰º‚Ì–_‚ÌˆÊ’u’²® */
 .drawer-open span:after {
     top: 8px;
 }
 
-/* ã‚¢ã‚¤ã‚³ãƒ³ãŒã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸã‚‰çœŸã‚“ä¸­ã®ç·šã‚’é€æ˜ã«ã™ã‚‹ */
+/* ƒAƒCƒRƒ“‚ªƒNƒŠƒbƒN‚³‚ê‚½‚ç^‚ñ’†‚Ìü‚ğ“§–¾‚É‚·‚é */
 #drawer-check:checked ~ .drawer-open span {
     background: rgba(255, 255, 255, 0);
 }
 
-/* ã‚¢ã‚¤ã‚³ãƒ³ãŒã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸã‚‰ã‚¢ã‚¤ã‚³ãƒ³ãŒÃ—å°ã«ãªã‚ˆã†ã«ä¸Šä¸‹ã®ç·šã‚’å›è»¢ */
+/* ƒAƒCƒRƒ“‚ªƒNƒŠƒbƒN‚³‚ê‚½‚çƒAƒCƒRƒ“‚ª~ˆó‚É‚È‚æ‚¤‚Éã‰º‚Ìü‚ğ‰ñ“] */
 #drawer-check:checked ~ .drawer-open span::before {
     bottom: 0;
     transform: rotate(45deg);
@@ -136,22 +136,22 @@ body {
     transform: rotate(-45deg);
 }
 
-/* ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ãƒ‡ã‚¶ã‚¤ãƒ³*/
+/* ƒƒjƒ…[‚ÌƒfƒUƒCƒ“*/
 .drawer-content {
     padding-top:5%;
     width: 30%;
     height: 100%;
     position: fixed;
     top: 0;
-    left: 100%; /* ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ç”»é¢ã®å¤–ã«é£›ã°ã™ */
+    left: 100%; /* ƒƒjƒ…[‚ğ‰æ–Ê‚ÌŠO‚É”ò‚Î‚· */
     z-index: 99;
     background:#333;
     transition: .5s;
 }
 
-/* ã‚¢ã‚¤ã‚³ãƒ³ãŒã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸã‚‰ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’è¡¨ç¤º */
+/* ƒAƒCƒRƒ“‚ªƒNƒŠƒbƒN‚³‚ê‚½‚çƒƒjƒ…[‚ğ•\¦ */
 #drawer-check:checked ~ .drawer-content {
-    left: 70%; /* ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ç”»é¢ã«å…¥ã‚Œã‚‹ */
+    left: 70%; /* ƒƒjƒ…[‚ğ‰æ–Ê‚É“ü‚ê‚é */
 }
 
 .drawer-item {
