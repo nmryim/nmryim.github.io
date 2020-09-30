@@ -76,12 +76,12 @@ body {
 }
 
 /*menu*/
-/* �`�F�b�N�{�b�N�X�͔�\���� */
+/* チェックボックスは非表示に*/
 .drawer-hidden {
     display: none;
 }
 
-/* �n���o�[�K�[�A�C�R���̐ݒu�X�y�[�X */
+/* ハンバーガーアイコンの設置スペース*/
 .drawer-open {
     display: flex;
     left:95%;
@@ -92,11 +92,12 @@ body {
     align-items: center;
     position: absolute;
     position:fixed;
-    z-index: 100; /* �d�Ȃ菇����ԏ�� */
+    z-index: 100; /* レイヤーを一番上に*/
     cursor: pointer;
+    background-color: #333;
 }
 
-/* �n���o�[�K�[���j���[�̃A�C�R�� */
+/* ハンバーガーメニューのアイコン */
 .drawer-open span,
 .drawer-open span:before,
 .drawer-open span:after {
@@ -110,22 +111,22 @@ body {
     position: absolute;
 }
 
-/* �O�{���̂�����ԏ�̖_�̈ʒu���� */
+/* 三本線のうちの一番上の線の位置調整*/
 .drawer-open span:before {
     bottom: 8px;
 }
 
-/* �O�{���̂�����ԉ��̖_�̈ʒu���� */
+/* 三本線のうちの一番下の線の位置調整 */
 .drawer-open span:after {
     top: 8px;
 }
 
-/* �A�C�R�����N���b�N���ꂽ��^�񒆂̐��𓧖��ɂ��� */
+/* アイコンがクリックされたら真ん中の線を透明にする*/
 #drawer-check:checked ~ .drawer-open span {
     background: rgba(255, 255, 255, 0);
 }
 
-/* �A�C�R�����N���b�N���ꂽ��A�C�R�����~��ɂȂ悤�ɏ㉺�̐�����] */
+/* アイコンがクリックされたら×印になるように上下の線を回転 */
 #drawer-check:checked ~ .drawer-open span::before {
     bottom: 0;
     transform: rotate(45deg);
@@ -136,22 +137,22 @@ body {
     transform: rotate(-45deg);
 }
 
-/* ���j���[�̃f�U�C��*/
+/* メニューのデザイン*/
 .drawer-content {
     padding-top:5%;
     width: 30%;
     height: 100%;
     position: fixed;
     top: 0;
-    left: 100%; /* ���j���[����ʂ̊O�ɔ�΂� */
+    left: 100%; /* メニュを画面外に */
     z-index: 99;
     background:#333;
     transition: .5s;
 }
 
-/* �A�C�R�����N���b�N���ꂽ�烁�j���[��\�� */
+/* アイコンがクリックされたらメニューを表示*/
 #drawer-check:checked ~ .drawer-content {
-    left: 70%; /* ���j���[����ʂɓ���� */
+    left: 70%; /* メニューを画面内に */
 }
 
 .drawer-item {
@@ -272,6 +273,36 @@ li {
     .title-img {
         max-width: 100%;
         height: auto;
+    }
+
+    .drawer-open {
+        left:90%;
+        bottom:92.5%;
+        height: 30px;
+        width: 30px;
+\    }
+
+    .drawer-open span,
+    .drawer-open span:before,
+    .drawer-open span:after {
+        height: 1.5px;
+        width: 15px;
+    }
+
+    .drawer-open span:before {
+        bottom: 4px;
+    }
+
+    .drawer-open span:after {
+        top: 4px;
+    }
+
+    .drawer-item {
+      font-size: 1.5rem;
+    }
+
+    .drawer-content {
+      padding-top: 10%;
     }
 
     .heading-contact, .heading {
