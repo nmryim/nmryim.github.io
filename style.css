@@ -307,27 +307,7 @@ li {
         max-width: 100%;
         height: auto;
     }
-/*
-    .drawer-open {
-        height: 30px;
-        width: 30px;
-\    }
 
-    .drawer-open span,
-    .drawer-open span:before,
-    .drawer-open span:after {
-        height: 1.5px;
-        width: 15px;
-    }
-
-    .drawer-open span:before {
-        bottom: 4px;
-    }
-
-    .drawer-open span:after {
-        top: 4px;
-    }
-*/
     .drawer-item {
       font-size: 2rem;
     }
