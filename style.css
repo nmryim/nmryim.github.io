@@ -84,17 +84,17 @@ body {
 /* ハンバーガーアイコンの設置スペース*/
 .drawer-open {
     display: flex;
-    left:95%;
-    bottom:90%;
-    height: 60px;
-    width: 60px;
+    right: 0%;
+    top:0%;;
+    height: 50px;
+    width: 50px;
     justify-content: center;
     align-items: center;
     position: absolute;
     position:fixed;
     z-index: 100; /* レイヤーを一番上に*/
     cursor: pointer;
-    background-color: #333;
+    background-color:rgba(51,51,51,.7);
 }
 
 /* ハンバーガーメニューのアイコン */
@@ -239,6 +239,39 @@ ul {
   color:#fff;
 }
 
+/*page_top*/
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(51,51,51,.7);
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f106';
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
 /*footer*/
 .footer {
   background-color:#333;
@@ -274,10 +307,8 @@ li {
         max-width: 100%;
         height: auto;
     }
-
+/*
     .drawer-open {
-        left:90%;
-        bottom:92.5%;
         height: 30px;
         width: 30px;
 \    }
@@ -296,13 +327,13 @@ li {
     .drawer-open span:after {
         top: 4px;
     }
-
+*/
     .drawer-item {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     .drawer-content {
-      padding-top: 17.5%;
+      padding-top: 15%;
     }
 
     .heading-contact, .heading {
